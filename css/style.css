@@ -3,8 +3,9 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    
     font-family: "Epilogue";
+    transition: all 0.1s ease-out;
 }
 .heee{
     display: flex;
@@ -31,20 +32,26 @@
     padding-left: 40px;
     padding-right: 40px;
     display: flex;
+    justify-self: 300px;
+    transition: all 0.7s;
     justify-content: space-between;
-    align-items: center;
     margin-top: 32px;
     
 }
+
 .hed-ul{
     display: flex;
     gap: 40px;
+    position: relative;
+    transition: all 0.7s;
 }
 .section-1{
     display: flex; 
     justify-content: space-evenly; 
     width: 100%;
+    position: absolute;
     margin-top: 70px;
+    position: absolute;
     margin-right: auto;
     margin-left: auto;
 }
@@ -86,3 +93,76 @@
     margin-top: 150px;
 
 }
+.heee{
+    position: relative;
+}
+
+
+.item{
+display: none;
+font-size: 14px;
+
+}
+
+.heddenr{
+    position: absolute;
+    top: 30px;
+    left: 0;
+
+}
+.head-li{
+    
+}
+.heddenr1{
+    position: absolute;
+    top: 30px;
+    left: 115px;
+    padding-left: 25px;
+    color: gray;
+    gap: 16px;
+    justify-content: center;
+    border-radius:10px;
+    width: 70px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+}
+.hedimg{
+    margin-right: 10px;
+    
+}
+
+.head-li:hover .item{
+    transition: all 0.4s;
+    cursor: pointer;
+    display: block;
+    visibility: visible;
+    padding: 1px;
+
+}
+.head-li:hover .heddenr{
+    right: 0;
+    border-radius:10px;
+    width: 120px;
+    height: 150px;
+    box-shadow: #000000 3px 3px 10px 2px;
+    display: flex;
+    z-index: 3;
+    background-color: #fff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: black;
+}
+
+.head-li:hover .heddenr1{
+    right: 0;
+    border-radius:10px;
+    width: 100px;
+    height: 100px;
+    box-shadow: #7c7b7b 1px 2px 20px 1px ;
+    background-color:#fff;
+    color: black;
+}
+
